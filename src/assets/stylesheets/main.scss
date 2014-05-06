@@ -7,7 +7,8 @@ $tenpx:10px;
 // FONTS
 // --------------------------------------------------------->
 $cinzel:'Cinzel Decorative', cursive;
-$helvetica: helvetica;
+$helvetica: Helvetica;
+$tinos:'Tinos', serif;
 // --------------------------------------------------------->
 // @import 'reset';
 // --------------------------------------------------------->
@@ -32,7 +33,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: $cinzel;
 	margin: 20px;
 	padding-left: 10px;
 	text-align: left;
@@ -40,7 +41,7 @@ h2 {
 }
 
 p {
-	font-family: helvetica;
+	font-family: $helvetica;
 	display: inline-block;
 	font-size: 16px;
 	margin-left: 20px;
@@ -265,7 +266,7 @@ p {
 }
 
 .example5-text-inside {
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: $cinzel;
 	width: 280px;
   height: 150px;
   margin: 0 auto;
@@ -295,7 +296,7 @@ p {
  }
 
  .example6-hello {
- 	font-family: 'Cinzel Decorative', cursive;
+ 	font-family: $cinzel;
  	position: relative;
  	color: white;
  	font-size:1px;
@@ -331,14 +332,14 @@ p {
 	overflow: hidden;
 	border-radius: 100px;
 	box-shadow: inset 0px 0px 20px rgba(204,204,171,0.5);
-						 		-webkit-transform: scale(.8,.8);
+						 	-webkit-transform: scale(.8,.8);
 	transition: background-color .5s ease,
 							border-radius .5s ease,
 							box-shadow .1s ease;
 					 	&:hover {
 					 		border-radius: 0px;
 					 		transition: border-radius .5s ease;
-					 	}
+					 		}
 					 	&:active {
 					 		border-radius: 0px;
 					 		background-color: tan;
@@ -347,14 +348,9 @@ p {
 					 		-webkit-transform: scale(.8,.8);
 					 		-webkit-transform: rotate(180deg);
 					 	}
-	}
+					}
 
 //----------------------------------------------------------->
-
-.example8-wrapper {
-	margin: 20px auto;
-	text-align: center;
-}	
 
 .example8-bg {
 	margin: 0 auto;
@@ -364,7 +360,7 @@ p {
 	top:44px;
 	background-color: white;
 	-webkit-transform: rotate(-2deg) skew(0,0);
-	 box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
 .example8-core {
@@ -375,134 +371,109 @@ p {
 	position: relative;
 	background-color: white;
 	-webkit-transform: rotate(0deg) skew(46deg,0);
-	 box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 }
 
 .example8-name {
-	 	font-family: 'Tinos', serif;
-	 	text-transform: uppercase;
-	 	position: relative;
-	 	color: #F4F4F4;
-	 	font-size: 38px;
-	 	bottom:52px;
-	 	/*left:15%;*/
-	 	text-shadow:0px 1px 0px #ECECEC;
-	 	-webkit-transform: rotate(0deg) skew(-8deg,0);
+ 	font-family: $tinos;
+ 	text-transform: uppercase;
+ 	position: relative;
+ 	color: #F4F4F4;
+ 	font-size: 38px;
+ 	bottom:43px;
+ 	left: 79px;
+ 	margin: 0 auto;
+ 	/*left:15%;*/
+ 	text-shadow:0px 1px 0px #ECECEC;
+ 	-webkit-transform: rotate(0deg) skew(-8deg,0);
 }
 
-
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-
-/*p {
-	text-align: left;
-}*/
-
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-
+//----------------------------------------------------------->
 
 .example9-wrapper {
 	margin: 20px auto;
 	text-align: center;
-}	
+	height: 120px;
+
 
 .example9-bg {
 	margin: 0 auto;
 	width: 0px;
 	height: 52px;
 	position: relative;
-	top:46px;
+	top:28px;
 	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
 	-webkit-transform: rotate(-2deg) skew(0,0);
 					-webkit-animation-name: blend;
 					-webkit-animation-duration: .5s;
-					-webkit-animation-itiration-count: 1;
+					-webkit-animation-iteration-count: 1;
 					-webkit-animation-fill-mode: forwards;
 					-webkit-animation-play-state: paused;
-
 }
 
 .example9-core {
 	margin: 0 auto;
 	width: 0px;
 	height: 40px;
-	/*top: -45px;*/
+	top: -18px;
 	position: relative;
 	background-color: white;
 	-webkit-transform: rotate(0deg) skew(46deg,0);
-	 box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-	 				-webkit-animation: blend2;
-					-webkit-animation-name: blend;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+	 				-webkit-animation-name: blend2;
 					-webkit-animation-duration: .5s;
 					-webkit-animation-delay: 1s;
-					-webkit-animation-itiration-count: 1;
+					-webkit-animation-iteration-count: 1;
 					-webkit-animation-fill-mode: forwards;
 					-webkit-animation-play-state: paused;
 }
 
 .example9-name {
-	 	font-family: 'Tinos', serif;
+	 	font-family: $tinos;
 	 	text-transform: uppercase;
 	 	position: relative;
 	 	font-size: 35px;
 	 	color: transparent;
-	 	bottom:49px;
+	 	bottom:92px;
 	 	/*left:15%;*/
 	 	-webkit-transform: rotate(0deg) skew(-8deg,0);
 	 				-webkit-animation-name: blend3;
 					-webkit-animation-duration: 1s;
 					-webkit-animation-delay: 2s;
-					-webkit-animation-itiration-count: 1;
+					-webkit-animation-iteration-count:1;
 					-webkit-animation-fill-mode: forwards;
 					-webkit-animation-play-state: paused;
 }
 
-/**/
-		.example9-wrapper:hover .example9-bg {
+		&:hover .example9-bg {
 			-webkit-animation-play-state: running;
 		}
 
-		.example9-wrapper:hover .example9-core {
+		&:hover .example9-core {
 			-webkit-animation-play-state: running;
 		}
 
-		.example9-wrapper:hover .example9-name {
+		&:hover .example9-name {
 			-webkit-animation-play-state: running;
-		}		
+	}
+}
 
 @-webkit-keyframes blend {
     from { 	width: 0px; }
     to { width: 340px;}
-}
+  	}
 
 @-webkit-keyframes blend2 {
     from { 	width: 0px; }
-    to { width: 340px; }
-}
+    to { width: 340px;}
+  	}
 
 @-webkit-keyframes blend3 {
     from { 	color: transparent; }
     to { color: #F4F4F4; text-shadow:0px 1px 0px #ECECEC;}
-}
+  	}
 
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
-			/**/
+//----------------------------------------------------------->
 
 .example10-wrapper {
 	margin: 20px auto;
@@ -636,7 +607,7 @@ p {
 }
 
 .example12-container {
- 	font-family: 'Cinzel Decorative', cursive;
+ 	font-family: $cinzel;
  		  -webkit-transform-style: preserve-3d;
 	  	transform-style: preserve-3d;
 	position: absolute;
@@ -698,7 +669,7 @@ p {
 			/**/
 
 h2 {
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: $cinzel;
 	margin: 10px;
 	text-align: left;
 	padding-top: 10px;
@@ -1186,7 +1157,7 @@ input[type=checkbox]:checked + label {
 }
 
 .example22-reflect {
-	font-family: 'Tinos', serif;
+	font-family: $tinos;
 	letter-spacing: .4em;
 	font-size: 2em;
 	padding-top: 0px;
@@ -1196,7 +1167,7 @@ input[type=checkbox]:checked + label {
 }
 
 .example22-reflect2 {
-	font-family: 'Tinos', serif;
+	font-family: $tinos;
 	letter-spacing: .4em;
 	font-size: 2em;
 	position:relative;
@@ -1249,7 +1220,7 @@ input[type=checkbox]:checked + label {
 
 /*.example23-spin {
 	background-color: transparent;
-	font-family: 'Tinos', serif;
+	font-family: $tinos;
 
 }*/
 
