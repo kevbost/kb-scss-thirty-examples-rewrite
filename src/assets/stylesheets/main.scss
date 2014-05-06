@@ -1,6 +1,21 @@
+// --------------------------------------------------------->
+// VARIABLES
+// --------------------------------------------------------->
+$grey:#363636;
+$tenpx:10px;
+// --------------------------------------------------------->
+// FONTS
+// --------------------------------------------------------->
+$cinzel:'Cinzel Decorative', cursive;
+$helvetica: helvetica;
+// --------------------------------------------------------->
 // @import 'reset';
- 
- // originally 1670 lines of code
+// --------------------------------------------------------->
+
+// --------------------------------------------------------->
+// originally 1670 lines of code
+// --------------------------------------------------------->
+
 
 body {
 	margin: 0;
@@ -10,10 +25,10 @@ body {
 }
 
 h1 {
-	font-family: 'Cinzel Decorative', cursive;
+	font-family: 'Cinzel Decorative';
 	margin: 10px;
 	padding-top:40px;
-	color: #363636;
+	color: $grey;
 }
 
 h2 {
@@ -21,7 +36,7 @@ h2 {
 	margin: 20px;
 	padding-left: 10px;
 	text-align: left;
-	color: #363636;
+	color: $grey;
 }
 
 p {
@@ -31,7 +46,7 @@ p {
 	margin-left: 20px;
 	margin-right: 20px;
 	text-align: left;
-	color:#363636;
+	color: $grey;
 }
 
 .wrapper {
@@ -56,7 +71,7 @@ p {
 	display: block;
 	text-align: left;
 
-// ---------------------------------------------------------
+// --------------------------------------------------------->
 
 .example1-button {
 	width: 200px;
@@ -67,14 +82,17 @@ p {
 	background: #B7DEED;
 	box-shadow: inset 0 -10px 0px rgb(202, 191, 191);
 
+	position: relative;
 	display: block;
 	text-align: center;
 	transition: all .1s ease;
 
 	p {
+		position: relative;
+		top: -9px;
 		color: #fff;
 		font-size: 25px;
-		line-height: 12px;
+		line-height: 0px;
 		text-shadow: 0px -1px 0px #98C4D5;
 		}
 
@@ -86,7 +104,7 @@ p {
 		}
 
 	&:active {
-		margin-top: 30px;
+		margin-top: 33px;
 		height: 29px;
 		box-shadow: inset 0 0px 0 rgb(202, 191, 191);
 		line-height: 30px;
@@ -234,6 +252,7 @@ p {
   height: 220px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
  }
 
 .example5-text {
@@ -287,7 +306,7 @@ p {
  }
 
  .example6-box:hover .example6-hello {
-  color: #363636;;
+  color: $grey;
   font-size:30px;
 	-webkit-transition: all 1s 1s linear;
  	-webkit-transform: rotate(180deg);
@@ -311,8 +330,8 @@ p {
 	background-color: beige;
 	overflow: hidden;
 	border-radius: 100px;
-	-webkit-transform: scale(.8,.8);
 	box-shadow: inset 0px 0px 20px rgba(204,204,171,0.5);
+						 		-webkit-transform: scale(.8,.8);
 	transition: background-color .5s ease,
 							border-radius .5s ease,
 							box-shadow .1s ease;
@@ -325,6 +344,7 @@ p {
 					 		background-color: tan;
 					 		box-shadow: inset 0px 0px 10px rgba(166,133,88,0.5);
 					 		transition: all .5s ease;
+					 		-webkit-transform: scale(.8,.8);
 					 		-webkit-transform: rotate(180deg);
 					 	}
 	}
@@ -682,7 +702,7 @@ h2 {
 	margin: 10px;
 	text-align: left;
 	padding-top: 10px;
-	color: #363636;
+	color: $grey;
 }
 
 .example13-wrapper {
