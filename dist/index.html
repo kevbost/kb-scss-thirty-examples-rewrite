@@ -1,8 +1,525 @@
+<!doctype html>
 <html>
 <head>
-	<title>1337</title>
+	<title>Thirty CSS Examples</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative:900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Tinos:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+
 </head>
 <body>
-test
+<div class="wrapper">
+	<div class="container">
+		<h1>HELLO!!!</h1>
+
+		<!--///////////////////////////////
+		////////////////I REALLY LIKE THIS
+		////////////////////////////////-->
+	
+		<div class="book"> <!-- <div class="overlay"></div> -->
+			<h2>example 1</h2>
+			<p>This was the example we went over in class.  It is my first example.</p>
+			<div class="example1-button">
+				<p>Press Me</p>
+			</div>
+		</div>
+
+		<!--  -->
+		<!--  -->
+		<!--  -->
+
+		<div class="book">
+			<h2>example 2</h2>
+			<p>I did this to help me understand whats going on with keyframe animations.  This image is 2000px wide and has ten different "frames" of the animation repeated all the way across.  The code takes ten "steps" down the image, doing the math for me, literally shifting the image position in the background.  So, "play .8s steps(10) infinite"... if you were to change the number of steps to "steps(11)" (like is shown in the animation below) then the animation would change.  There are only ten frames on a fixed dimension image, so telling the computer that there are 11 frams then divides the pasted code into eleven parts and essentially renders the animation worthless.  I copy and pasted this code, and then destroyed it, for science.</p>
+				<div class="example2-sprite"></div>
+			<p>Sauce: <a href="http://jsfiddle.net/simurai/CGmCe/light/" target="_blank">http://jsfiddle.net/simurai/CGmCe/light/</a></p>
+		</div>
+
+
+		<!--  -->
+		<!--  -->
+		<!--  -->
+
+		<div class="book example3">
+			<h2>example 3 [fixed thanks to error report]</h2>
+			<p>Here's another time sucker upper that I basically copied, studied the code through breaking it and made it sort of my own.  (I promise, ill be creating for myself here shortly.)
+				I discovered some new-to-me translate animations, translate3d(x-axis, y-axis, z-axis) is interesting.  It was used in this animation of Bromswell on the seperate png's of his body.  The head has a slight breathing motion to it as does the body. <br> Sauce: <a href="http://samuli.hakoniemi.net/having-fun-with-css-keyframes/">http://samuli.hakoniemi.net/having-fun-with-css-keyframes/</a> 
+			</p>
+			<div class="example3-character">
+				<img class="example3-bg" src="img/example3-bg.png"></img>
+				<img class="example3-body" src="img/example3-body.png"></img>
+				<img class="example3-head" src="img/example3-head.png"></img>
+			</div>
+		</div>
+
+		<!--  -->
+		<!--  -->
+		<!--  -->
+
+		<div class="book"> <!-- <div class="overlay"></div> -->
+			<h2>example 4 - game</h2>
+			<p>Instructions: Change all of the circles into squares by clicking on them. You have 10 seconds after you click your first circle to complete the grid. Good luck!</p>
+			<div class="example4">
+				<div class="ball-container">
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+			<div class="pretty-ball"></div>
+		</div>
+		</div>
+	</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book"> 
+			<h2>example 5</h2>
+			<p>I tried replicating a "comic book style panes" css example that i found on codepen, but something wasnt working with the code.  I discovered this morning that when i pasted the CSS that governs the entire page BELOW the CSS that governs THIS example box, everything that's broken get's reset.  It works so im going with it... now if i could just find where in my code i went wrong...<br>[Edit, thanks to error reporting, i was able to fix many of the bugs that plagued this whole page]</p>
+			<!-- <div class="blanket-wrapper"> -->
+			<div class="example5-outside">
+				<div class="example5">
+ 					<div class="example5-text">
+						<!-- <p>"This is the general idea, needs to be more polished though"</p> -->
+ 						<div class="example5-text-inside">Yeah! Finally!</div>
+ 						</div>
+ 					</div>
+ 				</div>
+  		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 6</h2>
+			<p>The EW! has a weird *pop* at the end, not sure why.<br>[Edit, it doesnt look weird anymore.]</p>
+					<div class="example6-box">
+						<p class="example6-hello">ew!</p>
+  			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 7</h2>
+			<p>Just a continuation of example 6.</p>
+			<div class="example7-wrapper">
+				<div class="example7-box"></div>
+				<div class="example7-box"></div>
+				<div class="example7-box"></div>
+				<div class="example7-box"></div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 8</h2>
+			<p>Messing around with my new favorite stylization, white on white.</p>
+			<div class="example8-wrapper">
+					<div class="example8-bg"></div>
+					<div class="example8-core"></div>
+					<p class="example8-name">The Iron Yard</p>
+					<div class="example8-overlay"></div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 9</h2>
+			<p>A continuation of Example 8.  Took a while to get this guy to stay put once the animation was finished.  Truthfully up until this point i did not understand keyframing or animations, still dont completely know how to apply the shorthand.  But i got it to work, and i have an understanding of what's going on with animations.</p>
+			<div class="example9-wrapper">
+					<div class="example9-bg"></div>
+					<div class="example9-core"></div>
+					<p class="example9-name">mathematical</p>
+					<div class="example9-overlay"></div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 10</h2>
+			<p>Based on some code that Joshua Smith had written and was being looked at by Joshua Date over hipchat.  Through listening in on that chat, i learned that two you cant have two different types of transforms going on in the same keyframe.  You have to apply the different transforms to different classes... i think im getting that correct...</p>
+			<div class="example10-wrapper">
+				<div class="example10-bg">
+					<div class="example10-move">
+						<div class="example10-content"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 11</h2>
+			<p>Basically the same as Example 10, but with some movement because i have not translated anything yet, at least not while understanding how.</p>
+			<div class="example11-wrapper">
+				<div class="example11-bg">
+					<div class="example11-move">
+						<div class="example11-content"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 12</h2>
+			<p>I dont get it.  This is based off of a codepen example of a flipping disk with two sides.  Someone pointed out on hipchat that its written sassy, so who knows what i'm missing in this.  I left it as is because its as close to two sides as i could get it.<br>Sauce: <a href="http://codepen.io/calacitizen/pen/DoJqk">http://codepen.io/calacitizen/pen/DoJqk</a></p>
+			<div class="example12-wrapper">
+				<div class="example12-bg">
+
+					<div class="example12-container">i dont
+						<div class="example12-content content1">get it</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 13</h2>
+			<p>This one is pretty interesting.  Taken primarily from codepen & rewritten, it uses an animation on the background called "pulse".  It begins at scale(0);opacity:1;, so its visible completely underneath the static forground (at z-index:10;) then transforms to it's native size and to opacity:0;.  I would not have put that technique together on my own but sweet, ill use it.  I also made it fade faster.<br>Sauce: <a href="http://codepen.io/KoniG87/pen/gktdi">http://codepen.io/KoniG87/pen/gktdi</a></p>
+			<div class="example13-wrapper">
+				<div class="example13-insidewrapper">
+					<div class="example13-marker">
+						<div class="example13-dot"></div>
+						<div class="example13-pulse"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 14</h2>
+			<p>Basic Form<br>Sauce: <a href="http://purecss.io/forms/">http://purecss.io/forms/</a> just for some basic guidance, because i think Pure is a preset collection of rules.</p>
+			<div class="example14-wrapper">
+				<form class="example14-form">
+					<fieldset>
+						<div class="form1">
+						<input type="email" placeholder="WHO ARE YOU">
+						</div>
+						<div class="form1">
+						<input type="email" placeholder="ARE YOU PEOPLE?">
+						</div>
+						<div class="form1">
+						<label for="remember">
+						<input id="remember" type="checkbox"> Check it or dont...
+    				</label>
+    				</div>
+    				<div class="form1">
+		        <button type="submit" class="pure-button pure-button-primary">PROVE IT</button>
+		     	 	</div>
+    			</fieldset>
+				</form>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 15</h2>
+			<p>This one is kind of dumb.  I know now how the position relative parent likes to slap their children into being absolute with their decisions.<br>Simi-Sauce: <a href="http://codepen.io/lizardking93/pen/czBJn">http://codepen.io/lizardking93/pen/czBJn</a></p>
+			<div class="example15-wrapper">
+				<ul class="example15-main">
+					<li class="example15-slide">WHOA GET ME OUTTA THIS BOX</li>
+				</ul>
+			</div>
+		</div>
+
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 16</h2>
+			<p>Lookin good. I want to put two more flashing squares inside of this main square, begining their flash pattern at a slightly later delay than it's parent.  Similar to the source.<br> Sauce: <a href="http://codepen.io/ScottMarshall/pen/EjCIH">http://codepen.io/ScottMarshall/pen/EjCIH</a></p>
+			<div class="example16-wrapper">
+				<div class="example16-loader">
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 17</h2>
+			<p>I attempted a really beautiful drop-shadow, Example 2 of the sauce, but i just couldnt make it happen.  I did get one corner of the page to pop off the screen. <br>Sauce: <a href="http://codepen.io/haibnu/pen/FxGsI">http://codepen.io/haibnu/pen/FxGsI</a></p>
+			<div class="example17-wrapper">
+				<div class="example17-bg">
+					<div class="example17-page">
+					<div class="effect2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 18</h2>
+			<p>I <u>love</u> high key elements, hidden in the background.</p>
+			<div class="example18-wrapper">
+				<div class="example18-bg">
+					<div class="example18-effect1"></div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 19</h2>
+			<p>Adapted from @date's IOS Slider check box, its just a radio button.  Today i learned that i do not understand how to style elements like this.</p>
+			<div class="example19-wrapper">
+				<div class="example19-bg">
+					
+					<div class="roundedOne">
+      			<input id="roundedOne" type="checkbox" name="check" checked />
+      			<label for="roundedOne">
+      			<span>On</span>
+      			</label>
+    			
+    			</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 20</h2>
+			<p>Continuation of example 18.  I really like subtle stylization like this.</p>
+			<div class="example20-wrapper">
+				<div class="example20-bg">
+					<div class="example20-paper"></div>
+    			</div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 21</h2>
+			<p>That's pretty cool.  It is pretty much just like it's source, but i did go through and write it.  The scale transformation goes from flat to vertically compressed, spending most of its time on the screen skinny, and in true animated form, reaches the top of it's cycle and shoots back down to the shadow.  Very cool, although i'm not entirely positive on percentages and how to REALLY use them as of yet. <br>Sauce: <a href="http://codepen.io/joshbader/pen/mpFir">http://codepen.io/joshbader/pen/mpFir</a></p>
+			<div class="example21-wrapper">
+				<div class="example21-bg">
+					<div class="example21-paper">
+						<div class="example21-bounce"></div>
+					</div>
+  			</div>
+			</div>
+		</div>	
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 22</h2>
+			<p>Just a reflection.  Inspiration sauce: <a href="http://codepen.io/maskedcoder/pen/GuDBw">http://codepen.io/maskedcoder/pen/GuDBw</a></p>
+			<div class="example22-wrapper">
+				<div class="example22-bg">
+					<h1 class="example22-reflect">THE IRON YARD</h1>
+					<h1 class="example22-reflect2">THE IRON YARD</h1>
+  			</div>
+			</div>
+		</div>	
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 23</h2>
+			<p>i cant get it to work, the letters are supposed to individually flip around on hover</p>
+			<div class="example23-wrapper">
+				<div class="example23-bg">
+					<h1 class="example23-spin">
+						<span class="spin">H</span>
+						<span class="spin">3</span>
+						<span class="spin">1</span>
+						<span class="spin">1</span>
+						<span class="spin">O</span>
+					</h1>
+  			</div>
+			</div>
+		</div>	
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 24</h2>
+			<p>playing with stepping sprite animations</p>
+			<div class="example24-wrapper">
+				<div class="example24-bg">
+					<div class="example24-sprite"></div>
+  			</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 25</h2>
+			<p>inset border</p>
+			<div class="example25-wrapper">
+				<div class="example25-bg">
+  			</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 26</h2>
+			<p>rotate</p>
+			<div class="example26-wrapper">
+				<div class="example26-bg">
+  			</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 27</h2>
+			<p>scale</p>
+			<div class="example27-wrapper">
+				<div class="example27-bg">
+  			</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 28</h2>
+			<p>spin</p>
+			<div class="example28-wrapper">
+				<div class="example28-bg">
+  			</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 29</h2>
+			<p>translate</p>
+			<div class="example29-wrapper">
+				<div class="example29-bg">
+  			</div>
+			</div>
+		</div>
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+		<div class="book">
+			<h2>example 30</h2>
+			<p>dissapear</p>
+			<div class="example30-wrapper">
+				<div class="example30-bg">
+					<div class="inside30"></div>
+  			</div>
+			</div>
+		</div>
+
+	<!--  -->
+	<!--  -->
+	</div>
+</div>
+
 </body>
 </html>
+
+
+
+
+
+<!-- GTA 5 Pretty -->
+<!--  http://codepen.io/beyondSimple/pen/sDibB --> 
+<!-- Floating Hearts -->
+<!--  http://codepen.io/dope/pen/igfoE --> 
+<!-- Form Typable -->
+<!--  http://codepen.io/rikschennink/pen/sCJKc --> 
+<!-- Shiny Text -->
+<!--  http://codepen.io/snoopy/pen/bHdnx --> 
+<!-- Cube -->
+<!-- http://codepen.io/gaelboyenval/pen/BuDJq --> 
