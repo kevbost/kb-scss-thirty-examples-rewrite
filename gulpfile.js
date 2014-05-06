@@ -1,5 +1,6 @@
 var gulp        = require('gulp'),
     gutil       = require('gulp-util'),
+    bourbon     = require('node-bourbon').includePaths,
     sass        = require('gulp-sass'),
     csso        = require('gulp-csso'),
     uglify      = require('gulp-uglify'),
@@ -47,7 +48,7 @@ gulp.task('templates', function() {
 gulp.task('express', function() {
   app.use(express.static(path.resolve('./dist')));
   app.listen(1337);
-  gutil.log('Listening on port: 1337');
+  gutil.log('Listening on port: 1337.');
 });
  
 gulp.task('watch', function () {
