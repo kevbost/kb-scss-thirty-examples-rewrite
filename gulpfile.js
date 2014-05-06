@@ -23,7 +23,7 @@ gulp.task('css', function() {
         includePaths: ['src/assets/stylesheets'].concat(bourbon),
         errLogToConsole: true
       } ) )
-    .pipe( csso() )
+    // .pipe( csso() )
     .pipe( gulp.dest('dist/assets/stylesheets/') )
     .pipe( livereload( server ));
 });
