@@ -54,7 +54,7 @@ gulp.task('templates', function() {
 gulp.task('express', function() {
   app.use(express.static(path.resolve('./dist')));
   app.listen(1337);
-  gutil.log('Listening on port: 1337.');
+  gutil.log('Listening on port: 1337. \n                          ._  \n                          |_  \n                          |_  \n                          |~  \n                        uuuuu \n                        |_#-| \n                        | _#| \n                        |_ -| \n   ________ .$$. ______ | - | _______________\n           .#$$$. __    |-  | ....__\n     _.--. $$$$$$    ` -[___]        `---\n           $$$$$$    -. \n      -.    `:/.    _.))        .--.\n             ||   ...-.     _..-.. _.-.\n      ._.-.  .]  /  (     ..      `.\n    -.     `.   .    `. -.\n             `. .      `--..\n                 `.');
 });
  
 gulp.task('watch', function () {
