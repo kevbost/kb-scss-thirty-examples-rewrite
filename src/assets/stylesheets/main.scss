@@ -8,8 +8,6 @@
 		@import 'bourbon';
 // 	-------------------------------------------------------->
 
--webkit-
-
 //  -------------------------------------------------------->
 //  originally 1670 lines of code
 //  -------------------------------------------------------->
@@ -22,7 +20,7 @@ body {
 }
 
 h1 {
-	font-family: 'Cinzel Decorative';
+	font-family: $cinzel;
 	margin: 10px;
 	padding-top:40px;
 	color: $grey;
@@ -117,7 +115,7 @@ p {
     width: 200px;
     height: 288px;
     background-image: url(/img/spritebig.png);
-    -webkit-animation: play .8s steps(11) infinite;
+    @include animation(play .8s steps(11) infinite);
 }
 
 @-webkit-keyframes play {
@@ -134,64 +132,69 @@ p {
 .example3-character {
 	float: left;
 	position: inherit;
-	left: 211px;
 	top: 30px;
+	left: 211px;
 }
 
 .example3-body {
-		position: relative;
-		left: -166px;
-    -webkit-animation: breathe-body 3000ms infinite both ease-in-out;  
+		@include position (relative, -7px null null 166px);
+    @include animation (breathe-body 3000ms infinite both ease-in-out);  
 }  
 
 .example3-head {
 		position: relative;  
-		top: -27px;
+		top: -33px;
 		left: -250px;
-    -webkit-animation: breathe-head 3000ms infinite both ease-in-out;  
+    @include animation (breathe-head 3000ms infinite both ease-in-out);
 }  
 
 .example3-bg {  
 		position: relative;
-		left: -122px;
 		top: -15px;
-    -webkit-animation: rotate-bg 10s infinite both ease-in-out alternate;  
+		left: -122px;
+		@include animation(rotate-bg 30s infinite both ease-in-out alternate);
+		@include animation-fill-mode(forwards);
+		@include animation-play-state(paused);
+			&:hover {
+				@include animation-play-state(running);
+			}
 }  
 
-@-webkit-keyframes breathe-head {  
+@include keyframes (breathe-head) {  
   0% {  
-      -webkit-transform: rotate(1deg) translate3d(0px, 0px, 0px);
+      @include transform(rotate(0deg) translateY(0px));
   }  
   40% {  
-      -webkit-transform: rotate(-3deg) translate3d(-2px, -1px, 0px);  
+      @include transform(rotate(3deg) translateY(-2px));
   }
-  100% {  
-      -webkit-transform: rotate(1deg) translate3d(0px, 0px, 0px);  
+  100% {
+      @include transform(rotate(0deg) translateY(0px));
   }  
 }
 
-@-webkit-keyframes breathe-body {  
+@include keyframes(breathe-body) {  
     0% {  
-        -webkit-transform: translate3d(0px,0px,0px);  
+        @include transform(rotate(0deg) translateY(0px));
     }  
     40% {  
-        -webkit-transform: translate3d(0px,-3px,0px);  
+        @include transform(rotate(-3deg) translateY(-2px));
     }  
     100%  {  
-        -webkit-transform: translate3d(0px,0px,0px);  
+        @include transform(rotate(0deg) translateY(0px));
     }  
 }
 
-@-webkit-keyframes rotate-bg {  
+@include keyframes(rotate-bg) {  
 
     0% {  
-        -webkit-transform: translate3d(0px,0px,0px);  
-        -webkit-transform: scale(.9,.9);
+        @include transform(rotate(0deg) translateY(0px));
     }  
-    100% {  
-        -webkit-transform: translate3d(0px,0px,0px);
-        -webkit-transform: scale(1,1);
+    40% {  
+        @include transform(rotate(0deg) translateX(-88px));
     }  
+    100%  {  
+        @include transform(rotate(0deg) translateY(0px));
+    }   
 }
 
 // ---------------------------------------------------------

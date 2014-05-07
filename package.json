@@ -14,7 +14,7 @@
     "gulp-uglify": "~0.1.0",
     "gulp-util": "~2.2.12",
     "marked": "~0.3.0",
-    "node-bourbon": "^1.2.2",
+    "node-bourbon": "^1.2.3",
     "tiny-lr": "0.0.5"
   }
 }
