@@ -156,7 +156,7 @@ p {
 		@include animation-fill-mode(forwards);
 		@include animation-play-state(paused);
 			&:hover {
-				@include animation-play-state(running);
+			@include animation-play-state(running);
 			}
 }  
 
